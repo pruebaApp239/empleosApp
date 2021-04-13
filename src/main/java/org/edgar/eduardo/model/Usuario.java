@@ -30,7 +30,7 @@ public class Usuario {
 	private LocalDate fechaRegistro;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name="UsuarioPerfil",
+	@JoinTable(name="usuarioperfil",
 	                 joinColumns = @JoinColumn(name="idUsuario"),
 	                 inverseJoinColumns = @JoinColumn(name="idPerfil"))
 	private List<Perfil> perfiles = null;
