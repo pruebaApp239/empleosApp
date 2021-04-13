@@ -47,7 +47,7 @@
               
                 <tr th:each="vacante : ${vacantes}">
                   <td><img 
-                  th:src="@{/logos/{img}(img=${vacante.imagen})}" width="30" height="30"></td>
+                  th:src="@{/images/{img}(img=${vacante.imagen})}" width="30" height="30"></td>
                   <td></td>
                   <td th:text="${vacante.nombre}"></td>                  
                   <td th:text="${vacante.fecha}"></td>
